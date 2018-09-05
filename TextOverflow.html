@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>test Page</title>
+<style type="text/css">
+table.tbl1{
+  //table-layout: fixed; 
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 2px orange;
+}
+table.tbl1 div {
+  border: solid 1px orange;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+table.tbl2{
+  table-layout: fixed; 
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 2px green;
+}
+table.tbl2 td {
+  border: solid 1px green;
+
+}
+
+// Multiline text with ellipsis
+.container {
+  background: #eee;
+  overflow: hidden;
+  width: 100%;
+}
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+</style>
+</head>
+<body>
+<table class="tbl1" style="table-layout:fixed">
+<tr>
+	<td><div>1asdfasdfahdfjo8w47g7hsgs7ehgph8g8php8ehrpgfk</div></td>
+	<td><div>2asdfasdfahdfjfkqf3p8989h4fp98fh84h9</div></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+</br>
+<table class="tbl2">
+<tr>
+	<td><div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, soluta, animi, molestiae, fugiat quam laborum harum ea delectus distinctio sunt laudantium voluptatum non sit exercitationem dolorem officiis nostrum culpa voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, soluta, animi, molestiae, fugiat quam laborum harum ea delectus distinctio sunt laudantium voluptatum non sit exercitationem dolorem officiis nostrum culpa voluptates.</p>
+    </div></td>
+	<td><div class="container"><p>2aaaaaa bbbbbbbbbb ccccccccccccc dddddddddd eeeeeeeeeeeeeeeeeee</p>
+	</div></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+</body>
+</html>
